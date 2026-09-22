@@ -1,0 +1,21 @@
+name: TrackerSword
+version: '${project.version}'
+main: net.mcdev.trackersword.TrackerSwordPlugin
+api-version: '1.21'
+author: YourName
+description: A custom sword with a player-tracking ability and a combat buff ability on a cooldown.
+
+commands:
+  trackersword:
+    description: Gives you (or another player) the Tracker Blade.
+    usage: /trackersword [player]
+    permission: trackersword.give
+    aliases: [tsword, trackerblade]
+
+permissions:
+  trackersword.give:
+    description: Allows giving out the Tracker Blade.
+    default: op
+  trackersword.use:
+    description: Allows using the Tracker Blade's abilities.
+    default: true

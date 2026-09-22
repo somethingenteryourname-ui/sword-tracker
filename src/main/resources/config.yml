@@ -1,0 +1,20 @@
+# TrackerSword configuration
+
+buff-ability:
+  # Right-click (no sneak) with the sword to trigger.
+  duration-seconds: 10
+  cooldown-seconds: 90        # 1:30
+  # These are the potion "levels" as shown in-game (Strength III = amplifier 2, etc.)
+  strength-level: 3
+  resistance-level: 2
+  regeneration-level: 2
+
+tracking-ability:
+  # Shift + right-click with the sword to open the player-head GUI.
+  # How often (in ticks, 20 = 1 second) the action bar direction/distance updates.
+  update-interval-ticks: 10
+  # Whether the wielder must be holding the sword in their main hand to see tracking info.
+  require-holding-sword: true
+
+item:
+  custom-model-data: 0        # set to a resource-pack model id if you have one, or leave 0
